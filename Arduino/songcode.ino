@@ -19,42 +19,42 @@
 #define NOTE_A1  55
 #define NOTE_AS1 58
 #define NOTE_B1  62
-#define NOTE_C2  65
-#define NOTE_CS2 69
-#define NOTE_D2  73
-#define NOTE_DS2 78
-#define NOTE_E2  82
-#define NOTE_F2  87
-#define NOTE_FS2 93
-#define NOTE_G2  98
-#define NOTE_GS2 104
-#define NOTE_A2  110
-#define NOTE_AS2 117
-#define NOTE_B2  123
-#define NOTE_C3  131
-#define NOTE_CS3 139
-#define NOTE_D3  147
-#define NOTE_DS3 156
-#define NOTE_E3  165
-#define NOTE_F3  175
-#define NOTE_FS3 185
-#define NOTE_G3  196
-#define NOTE_GS3 208
-#define NOTE_A3  220
-#define NOTE_AS3 233
-#define NOTE_B3  247
-#define NOTE_C4  262
-#define NOTE_CS4 277
-#define NOTE_D4  294
-#define NOTE_DS4 311
-#define NOTE_E4  330
-#define NOTE_F4  349
-#define NOTE_FS4 370
-#define NOTE_G4  392
-#define NOTE_GS4 415
-#define NOTE_A4  440
-#define NOTE_AS4 466
-#define NOTE_B4  494
+#define C2  65
+#define CS2 69
+#define D2  73
+#define DS2 78
+#define E2  82
+#define F2  87
+#define FS2 93
+#define G2  98
+#define GS2 104
+#define A2  110
+#define AS2 117
+#define B2  123
+#define C3  131
+#define CS3 139
+#define D3  147
+#define DS3 156
+#define E3  165
+#define F3  175
+#define FS3 185
+#define G3  196
+#define GS3 208
+#define A3  220
+#define AS3 233
+#define B3  247
+#define C4  262
+#define CS4 277
+#define D4  294
+#define DS4 311
+#define E4  330
+#define F4  349
+#define FS4 370
+#define G4  392
+#define GS4 415
+#define A4  440
+#define AS4 466
+#define B4  494
 #define NOTE_C5  523
 #define NOTE_CS5 554
 #define NOTE_D5  587
@@ -152,6 +152,49 @@ int melody[] = {
   
 };
 */
+
+int melody[] = {
+
+  // Hedwig's theme fromn the Harry Potter Movies
+  // Socre from https://musescore.com/user/3811306/scores/4906610
+  
+  REST, 2, NOTE_D4, 4,
+  NOTE_G4, -4, NOTE_AS4, 8, NOTE_A4, 4,
+  NOTE_G4, 2, NOTE_D5, 4,
+  NOTE_C5, -2, 
+  NOTE_A4, -2,
+  NOTE_G4, -4, NOTE_AS4, 8, NOTE_A4, 4,
+  NOTE_F4, 2, NOTE_GS4, 4,
+  NOTE_D4, -1, 
+  NOTE_D4, 4,
+
+  NOTE_G4, -4, NOTE_AS4, 8, NOTE_A4, 4, //10
+  NOTE_G4, 2, NOTE_D5, 4,
+  NOTE_F5, 2, NOTE_E5, 4,
+  NOTE_DS5, 2, NOTE_B4, 4,
+  NOTE_DS5, -4, NOTE_D5, 8, NOTE_CS5, 4,
+  NOTE_CS4, 2, NOTE_B4, 4,
+  NOTE_G4, -1,
+  NOTE_AS4, 4,
+     
+  NOTE_D5, 2, NOTE_AS4, 4,//18
+  NOTE_D5, 2, NOTE_AS4, 4,
+  NOTE_DS5, 2, NOTE_D5, 4,
+  NOTE_CS5, 2, NOTE_A4, 4,
+  NOTE_AS4, -4, NOTE_D5, 8, NOTE_CS5, 4,
+  NOTE_CS4, 2, NOTE_D4, 4,
+  NOTE_D5, -1, 
+  REST,4, NOTE_AS4,4,  
+
+  NOTE_D5, 2, NOTE_AS4, 4,//26
+  NOTE_D5, 2, NOTE_AS4, 4,
+  NOTE_F5, 2, NOTE_E5, 4,
+  NOTE_DS5, 2, NOTE_B4, 4,
+  NOTE_DS5, -4, NOTE_D5, 8, NOTE_CS5, 4,
+  NOTE_CS4, 2, NOTE_AS4, 4,
+  NOTE_G4, -1, 
+  
+};
 
 // sizeof gives the number of bytes, each int value is composed of two bytes (16 bits)
 // there are two values per note (pitch and duration), so for each note there are four bytes
